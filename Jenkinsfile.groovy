@@ -2,7 +2,13 @@
 
 
 def start() {
-    println "This is remote!!!!"
+    stage('test') {
+        steps {
+            step {
+               println "REMOTEANDO" 
+            }
+        }
+    }
 }
 
 
