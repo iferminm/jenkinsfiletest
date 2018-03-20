@@ -3,9 +3,7 @@
 
 def start() {
     stage('test') {
-        steps {
-           println "REMOTEANDO" 
-        }
+       println "REMOTEANDO" 
     }
 }
 
