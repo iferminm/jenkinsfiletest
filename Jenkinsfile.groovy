@@ -3,7 +3,7 @@
 
 def start() {
     stage('test') {
-       println "REMOTEANDO" 
+       println "REMOTEANDO ${env.projectType}" 
     }
 }
 
