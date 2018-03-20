@@ -1,6 +1,4 @@
 #!/usr/bin/env groovy
-@Library('PipelineLibrary') _
-
 
 def start() {
     stage('test') {
