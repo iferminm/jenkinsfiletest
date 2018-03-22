@@ -7,6 +7,12 @@ def start() {
     stage('test library function') {
         sayHello()
     }
+    stage('Publishing to slack') {
+        slackLogger.info("This is info")
+        slackLogger.warning("This is warning")
+        slackLogger.faulure("This is faulure")
+        slackLogger.success("This is success")
+    }
 }
 
 
