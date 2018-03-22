@@ -10,7 +10,7 @@ def start() {
     stage('Publishing to slack') {
         slackLogger.info("This is info")
         slackLogger.warning("This is warning")
-        slackLogger.faulure("This is faulure")
+        slackLogger.failure("This is failure")
         slackLogger.success("This is success")
     }
 }
