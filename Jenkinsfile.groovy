@@ -1,6 +1,7 @@
 #!/usr/bin/env groovy
 
 def start() {
+    script {
     try {
         stage('test') {
             println "REMOTEANDO ${env.PROJECT_TYPE}" 
@@ -16,7 +17,7 @@ def start() {
         }
     catch(err) {
         throw err
-    }
+    }}
 }
 
 
