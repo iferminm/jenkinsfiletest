@@ -5,7 +5,11 @@ def start() {
         println "REMOTEANDO ${env.PROJECT_TYPE}" 
     }
     stage('test library function') {
-        sayHello()
+        try {
+            sayHello()
+        } catch(e) {
+            throw e
+        }
     }
     stage('Publishing to slack') {
         slackLogger.info("This is info")
