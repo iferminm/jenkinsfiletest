@@ -11,6 +11,9 @@ def start() {
             throw e
         }
     }
+    stage {
+        echo check("Jenkinsfile")
+    }
     stage('Publishing to slack') {
         slackLogger.info("This is info")
         slackLogger.warning("This is warning")
