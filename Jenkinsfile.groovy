@@ -12,7 +12,9 @@ def start() {
         }
     }
     stage {
-        echo check("Jenkinsfile")
+        script {
+            echo check("Jenkinsfile")
+        }
     }
     stage('Publishing to slack') {
         slackLogger.info("This is info")
