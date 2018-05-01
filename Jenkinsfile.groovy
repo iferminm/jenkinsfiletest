@@ -12,6 +12,7 @@ def start() {
         }
     }
     stage('Publishing to slack') {
+        env.TEST = "This is a test"
         slackLogger.info("This is info")
         slackLogger.warning("This is warning")
         slackLogger.failure("This is failure")
